@@ -73,10 +73,4 @@ if __name__ == "__main__":
         clear_screen()
         main_menu()
     else:
-        print("❌ Wrong username or password!")if __name__ == "__main__":
-    u = input("Username: ")
-    p = getpass.getpass("Password: ")
-    if u == USERNAME and p == PASSWORD:
-        main_menu()
-    else:
-        print("❌ Wrong username or password!")
+        print("❌ Wrong username or
