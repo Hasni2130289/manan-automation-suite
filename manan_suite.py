@@ -1,15 +1,19 @@
 import getpass
 import time
 from datetime import datetime
+import os
 
 # Simple login system
 USERNAME = "manan"
 PASSWORD = "manan"
 
+def clear_screen():
+    os.system("clear")  # Termux/Unix clear screen
+
 def banner():
-    print("\n" + "="*50)
-    print(" " * 10 + "\033[1m\033[95mMANAN AUTOMATION\033[0m")  # Bold big text
-    print("="*50 + "\n")
+    print("\n" + "="*60)
+    print(" " * 15 + "\033[1m\033[95mMANAN AUTOMATION\033[0m")  # Bold + Center + Purple
+    print("="*60 + "\n")
 
 def seo_helper():
     topic = input("Enter your video topic: ")
@@ -61,6 +65,15 @@ def main_menu():
             print("Invalid choice!")
 
 if __name__ == "__main__":
+    clear_screen()
+    banner()
+    u = input("Username: ")
+    p = getpass.getpass("Password: ")
+    if u == USERNAME and p == PASSWORD:
+        clear_screen()
+        main_menu()
+    else:
+        print("❌ Wrong username or password!")if __name__ == "__main__":
     u = input("Username: ")
     p = getpass.getpass("Password: ")
     if u == USERNAME and p == PASSWORD:
