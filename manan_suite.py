@@ -60,4 +60,4 @@ if __name__ == "__main__":
     if u == USERNAME and p == PASSWORD:
         main_menu()
     else:
-        print("❌ Wrong username or password!")
+        print("❌ Wrong username or password!")        print("❌ Wrong username or password!")
