@@ -47,12 +47,18 @@ def main_menu():
         print("4. Scheduler")
         print("5. Exit")
         choice = input("\nSelect option: ")
-        if choice == "1": seo_helper()
-        elif choice == "2": thumbnail_helper()
-        elif choice == "3": social_post_helper()
-        elif choice == "4": scheduler()
-        elif choice == "5": break
-        else: print("Invalid choice!")
+        if choice == "1": 
+            seo_helper()
+        elif choice == "2": 
+            thumbnail_helper()
+        elif choice == "3": 
+            social_post_helper()
+        elif choice == "4": 
+            scheduler()
+        elif choice == "5": 
+            break
+        else: 
+            print("Invalid choice!")
 
 if __name__ == "__main__":
     u = input("Username: ")
@@ -60,4 +66,4 @@ if __name__ == "__main__":
     if u == USERNAME and p == PASSWORD:
         main_menu()
     else:
-        print("❌ Wrong username or password!")        print("❌ Wrong username or password!")
+        print("❌ Wrong username or password!")
